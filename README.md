@@ -6,20 +6,27 @@
 <br/>
 
 # 1. Features
+
 1. Fixed `Detect(byte[] imageData)` method of `yolo_cpp_dll.dll`, the performance is close to the `Detect(string filename)`
 2. Remove third-party of `Alturos.Yolo.3.0.6-alpha.dll` dependencies
 3. Use the latest training dataset (2024-4-10)
+
 <br/>
 <br/>
+
 # 2. Usage
+
 1. Unzip the zip files to their folders
     - `./opencv_world420d.zip`
     - `./model/yolo-v3/yolov3.weights.zip`
     - `./model/new-coolooai/yolov3_custom_best.weights.zip`
 2. F5 to run the code
+
 <br/>
 <br/>
+
 # 3. Precautions
+
 1.  After a lot of testing and switching between many driver and cuda versions, found that `CUDA10.2+YOLOv3` are the fastest. Other versions are inefficient and have a serious performance loss.  
 
     | NVIDIA      | GeForce RTX 2080 Ti<br>GeForce RTX 2060| |
@@ -36,10 +43,6 @@
 This guarantees the best performance of YOLOv3.
 3. If you get the "yolo_cpp.dll.dll not found" error, you need to recompile the `yolo_v3.dll` with VS2019, not the VS2022.   
 4. Watch this: [Install & test YoloV3 on Windows 10](https://www.youtube.com/watch?v=zT8eDXpslXw)
-
-
-
-
 
 
 <p><br /></p>
@@ -63,4 +66,5 @@ https://github.com/12343954/Darknet.YOLOv3.V2/assets/1804003/2973416a-1465-42e9-
 </p>
 
 # 5. MIT LICENSE
+
 Enjoy it!
